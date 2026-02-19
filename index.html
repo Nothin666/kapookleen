@@ -16,7 +16,7 @@
 
         body { font-family: 'Montserrat', sans-serif; margin: 0; background-color: var(--beige); color: #333; line-height: 1.6; }
         
-        /* NAVBAR RESPONSIVO */
+        /* NAVBAR RESPONSIVO CON LOGO CENTRADO */
         nav { 
             background: var(--blanco); 
             padding: 10px 5%; 
@@ -27,75 +27,75 @@
             position: sticky; 
             top: 0; 
             z-index: 1000; 
-            min-height: 70px;
+            height: 80px;
         }
-        .logo-nav-container { height: 60px; display: flex; align-items: center; }
-        .logo-nav-container img { height: 100%; width: auto; max-width: 150px; }
+        .logo-nav-container { height: 70px; display: flex; align-items: center; }
+        .logo-nav-container img { height: 100%; width: auto; }
 
-        /* HERO SECTION CON AJUSTE PARA MÓVIL */
+        /* HERO SECTION RESPONSIVO */
         header {
-            min-height: 80vh;
+            min-height: 85vh;
             background: linear-gradient(rgba(27, 67, 50, 0.75), rgba(27, 67, 50, 0.75)), 
                         url('https://images.unsplash.com/photo-1542601906970-141970494673?auto=format&fit=crop&w=1600&q=80'); 
             background-size: cover; background-position: center;
             display: flex; align-items: center; justify-content: center; color: white; text-align: center;
-            padding: 40px 20px;
+            padding: 60px 20px;
         }
         .hero-card {
             background: rgba(255, 255, 255, 0.1);
-            padding: 40px 20px;
-            border-radius: 30px;
+            padding: 50px 30px;
+            border-radius: 40px;
             backdrop-filter: blur(12px);
             border: 1px solid rgba(255,255,255,0.2);
-            max-width: 600px;
+            max-width: 700px;
             width: 100%;
         }
         
-        /* EL LOGO AHORA ES FLUIDO */
         .main-logo-area {
-            width: 180px; /* Tamaño base para móvil */
-            height: 180px;
-            max-width: 250px; /* Tamaño máximo para PC */
-            max-height: 250px;
+            width: 200px; 
+            height: 200px;
             background: white;
             border-radius: 50%;
-            margin: -90px auto 20px;
+            margin: -110px auto 20px;
             display: flex;
             align-items: center;
             justify-content: center;
             overflow: hidden;
             box-shadow: 0 15px 35px rgba(0,0,0,0.3);
-            border: 5px solid var(--verde-boton);
+            border: 6px solid var(--verde-boton);
         }
-        .main-logo-area img { width: 80%; height: auto; object-fit: contain; }
+        .main-logo-area img { width: 85%; height: auto; object-fit: contain; }
 
-        .container { max-width: 1100px; margin: auto; padding: 40px 20px; }
-        .section-title { text-align: center; color: var(--verde-selva); font-size: 1.8rem; margin-bottom: 30px; border-bottom: 4px solid var(--verde-boton); padding-bottom: 10px; }
+        .container { max-width: 1100px; margin: auto; padding: 60px 20px; }
+        .section-title { text-align: center; color: var(--verde-selva); font-size: 2.5rem; margin-bottom: 40px; border-bottom: 4px solid var(--verde-boton); padding-bottom: 10px; }
 
-        /* GRIDS QUE SE AJUSTAN SOLOS */
-        .grid-auto { display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 20px; margin-bottom: 60px; }
+        /* GRIDS DINÁMICOS */
+        .grid-layout { display: grid; grid-template-columns: repeat(auto-fit, minmax(320px, 1fr)); gap: 25px; margin-bottom: 80px; }
         
-        .card { background: white; padding: 25px; border-radius: 20px; box-shadow: 0 5px 15px rgba(0,0,0,0.05); text-align: center; }
-        .img-wrapper { width: 100%; height: 250px; border-radius: 15px; overflow: hidden; background: #eee; margin-bottom: 15px; }
+        .card-evidencia { background: white; padding: 20px; border-radius: 20px; text-align: center; box-shadow: 0 5px 15px rgba(0,0,0,0.05); }
+        .img-wrapper { width: 100%; height: 300px; border-radius: 15px; overflow: hidden; background: #eee; margin-bottom: 15px; }
         .img-wrapper img { width: 100%; height: 100%; object-fit: cover; }
 
-        .info-card { text-align: left; border-top: 6px solid var(--cafe); }
-        .biz-card { text-align: left; border-left: 8px solid var(--verde-boton); }
+        .info-card { background: white; padding: 30px; border-radius: 25px; box-shadow: 0 8px 20px rgba(0,0,0,0.05); border-top: 8px solid var(--cafe); }
+        .biz-card { background: white; padding: 35px; border-radius: 25px; border-left: 10px solid var(--verde-boton); box-shadow: 0 8px 20px rgba(0,0,0,0.04); }
 
-        /* ODS SECTION */
-        .ods-container { background: var(--verde-selva); color: white; padding: 40px 20px; border-radius: 30px; text-align: center; margin-bottom: 60px; }
-        .ods-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(140px, 1fr)); gap: 15px; margin-top: 25px; }
-        .ods-item { background: rgba(255,255,255,0.1); padding: 15px; border-radius: 12px; font-size: 0.85rem; border: 1px solid rgba(255,255,255,0.1); }
+        /* ODS SECTION COMPLETA */
+        .ods-container { background: var(--verde-selva); color: white; padding: 60px 40px; border-radius: 50px; text-align: center; margin-bottom: 80px; }
+        .ods-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); gap: 20px; margin-top: 30px; }
+        .ods-item { background: rgba(255,255,255,0.1); padding: 25px; border-radius: 15px; border: 1px solid rgba(255,255,255,0.2); text-align: left; }
+        .ods-item strong { display: block; color: var(--verde-boton); margin-bottom: 10px; font-size: 1.2rem; }
 
         /* FOOTER */
-        .footer-cta { text-align: center; padding: 60px 20px; background: var(--cafe); color: white; border-radius: 30px 30px 0 0; }
-        .btn { background: var(--verde-boton); color: white; padding: 15px 30px; text-decoration: none; border-radius: 50px; font-weight: bold; transition: 0.3s; display: inline-block; width: 80%; max-width: 300px; }
+        .footer-cta { text-align: center; padding: 100px 20px; background: var(--cafe); color: white; border-radius: 50px 50px 0 0; }
+        .btn { background: var(--verde-boton); color: white; padding: 20px 50px; text-decoration: none; border-radius: 60px; font-weight: bold; font-size: 1.2rem; display: inline-block; transition: 0.3s; }
+        .btn:hover { background: var(--blanco); color: var(--verde-selva); transform: scale(1.05); }
 
-        /* AJUSTES ESPECÍFICOS PARA PANTALLAS GRANDES */
-        @media (min-width: 768px) {
-            .section-title { font-size: 2.5rem; }
-            .main-logo-area { width: 250px; height: 250px; margin-top: -120px; }
-            .ods-item { font-size: 0.95rem; }
+        /* MEDIA QUERIES PARA MÓVIL */
+        @media (max-width: 600px) {
+            .section-title { font-size: 1.8rem; }
+            .main-logo-area { width: 170px; height: 170px; margin-top: -90px; }
+            .grid-layout { grid-template-columns: 1fr; }
+            .hero-card h1 { font-size: 1.8rem; }
         }
     </style>
 </head>
@@ -115,69 +115,59 @@
 
     <div class="container">
         
-        <h2 class="section-title">Evidencia</h2>
-        <div class="grid-auto">
-            <div class="card">
-                <div class="img-wrapper"><img src="paso1.jpg" alt="Paso 1"></div>
+        <h2 class="section-title">Evidencia de Funcionamiento</h2>
+        <div class="grid-layout">
+            <div class="card-evidencia">
+                <div class="img-wrapper"><img src="paso1.jpg" alt="Escenario"></div>
                 <h4>1. El Escenario</h4>
-                <p>Hidrocarburos en el agua.</p>
+                <p>Presencia de hidrocarburos en cuerpos de agua dulce o salada.</p>
             </div>
-            <div class="card">
-                <div class="img-wrapper"><img src="paso2.jpg" alt="Paso 2"></div>
-                <h4>2. Absorción</h4>
-                <p>Captura inmediata de aceites.</p>
+            <div class="card-evidencia">
+                <div class="img-wrapper"><img src="paso2.jpg" alt="Acción"></div>
+                <h4>2. Absorción Inmediata</h4>
+                <p>La fibra de Ceiba captura el aceite instantáneamente por su naturaleza oleofílica.</p>
             </div>
-            <div class="card">
-                <div class="img-wrapper"><img src="paso3.jpg" alt="Paso 3"></div>
-                <h4>3. Extracción</h4>
-                <p>Recuperación limpia y eficaz.</p>
-            </div>
-        </div>
-
-        <h2 class="section-title">Ficha Técnica: Ceiba</h2>
-        <div class="grid-auto">
-            <div class="card info-card">
-                <h3>🌳 Producción</h3>
-                <p>Árbol de 30-60m. Rinde 9kg de fibra por temporada (600-900 frutos).</p>
-            </div>
-            <div class="card info-card">
-                <h3>📍 Ubicación</h3>
-                <p>Dominante en Tabasco: Villahermosa, Paraíso, Centla y zonas petroleras.</p>
-            </div>
-            <div class="card info-card">
-                <h3>⚠️ Cultivo</h3>
-                <p>Espaciado 10x10m. Fibra altamente oleofílica e hidrofóbica.</p>
+            <div class="card-evidencia">
+                <div class="img-wrapper"><img src="paso3.jpg" alt="Resultado"></div>
+                <h4>3. Extracción Limpia</h4>
+                <p>Separación total: agua restaurada y material contaminante recuperado.</p>
             </div>
         </div>
 
-        <h2 class="section-title">Estrategia Técnica</h2>
-        <div class="grid-auto">
-            <div class="card biz-card">
-                <h3>📦 Producto</h3>
-                <p>Almohadillas y tapetes absorbentes biodegradables para limpieza industrial.</p>
+        <h2 class="section-title">Ficha Técnica: Ceiba pentandra (Kapok)</h2>
+        <div class="grid-layout">
+            <div class="info-card">
+                <h3>🌳 Biología y Crecimiento</h3>
+                <p>Árbol majestuoso que alcanza de <strong>30-60m de altura</strong>. Produce frutos entre los 3-8 años (promedio 5).</p>
+                <ul>
+                    <li>Genera 600 a 900 frutos por temporada (10-18 cm c/u).</li>
+                    <li>Rinde entre 10 a 25g de fibra seca por fruto.</li>
+                    <li>Promedio de 9kg de fibra por temporada por árbol.</li>
+                </ul>
             </div>
-            <div class="card biz-card">
-                <h3>💰 Viabilidad</h3>
-                <p>Aprovechamiento de recursos locales para mitigar multas de $2,000 USD/hora.</p>
+            <div class="info-card">
+                <h3>📍 Distribución en Tabasco</h3>
+                <p>Presencia dominante en todo el estado, destacando en:</p>
+                <p><em>Villahermosa, Tacotalpa, Jalpa, Nacajuca, Comalcalco, Cárdenas, Centla, Paraíso y zonas aledañas.</em></p>
+                <p>Nativo de América tropical con presencia en Veracruz, Chiapas y Yucatán.</p>
+            </div>
+            <div class="info-card">
+                <h3>⚠️ Manejo de Cultivo</h3>
+                <p>Fibra <strong>hidrofóbica y oleofílica</strong> de alto rendimiento. Requerimientos:</p>
+                <ul>
+                    <li>Espacio de 8x8m o 10x10m para evitar competencia de nutrientes.</li>
+                    <li>Sensible a inundaciones constantes y sombras excesivas.</li>
+                    <li>Óptimo en suelos no compactos del sureste mexicano.</li>
+                </ul>
             </div>
         </div>
 
-        <div class="ods-container">
-            <h2>Compromiso ODS</h2>
-            <div class="ods-grid">
-                <div class="ods-item"><strong>ODS 6</strong> Agua limpia</div>
-                <div class="ods-item"><strong>ODS 12</strong> Consumo Resp.</div>
-                <div class="ods-item"><strong>ODS 14/15</strong> Ecosistemas</div>
-                <div class="ods-item"><strong>ODS 8</strong> Economía Local</div>
+        <h2 class="section-title">Estrategia de Impacto</h2>
+        <div class="grid-layout">
+            <div class="biz-card">
+                <h3>📦 Producto y Valor</h3>
+                <p>Almohadillas y tapetes absorbentes elaborados con fibra de Ceiba pentandra, destinados a la limpieza de derrames de aceites e hidrocarburos. Material biodegradable con capacidad de absorción selectiva de aceites (sin retener agua), que reduce tiempos de limpieza, costos operativos y generación de residuos.</p>
             </div>
-        </div>
-
-    </div>
-
-    <section class="footer-cta">
-        <a href="#" class="btn">SOLICITAR DOSSIER</a>
-        <p style="margin-top: 30px; opacity: 0.7; font-size: 0.8rem;">&copy; 2026 KAPOOKLEEN | Tabasco</p>
-    </section>
-
-</body>
-</html>
+            <div class="biz-card">
+                <h3>👥 Segmento y Modelo</h3>
+                <p>Segmento
